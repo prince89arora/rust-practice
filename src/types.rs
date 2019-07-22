@@ -26,4 +26,26 @@ pub fn run() {
     println!("Max i16: {}", std::i16::MAX);
     println!("Max i32: {}", std::i32::MAX);
     println!("Max f32: {}", std::f32::MAX);
+
+    //boolean vars
+    let bool_default = true;
+
+    // explicitly defined
+    let bool_defined: bool = true;
+
+    // boolean from expression
+    let bool_expression = 10 > 0;
+    println!("{:?}", (bool_default, bool_defined, bool_expression));
+
+    //char
+    //characters in rust are unicode.
+
+    //character definition
+    let a_char = 'a';
+
+    //unicode char
+    let unicode_char = '\u{1F603}';
+    println!("{:?}", ( a_char, unicode_char ));
+
+
 }
