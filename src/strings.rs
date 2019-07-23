@@ -12,4 +12,7 @@ pub fn run() {
     //push string
     hello.push_str("There...");
     println!("{}", hello);
+
+    //fixed length string
+    let fixed_string = "Hello"; //primitive string
 }
