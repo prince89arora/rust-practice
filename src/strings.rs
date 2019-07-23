@@ -14,5 +14,19 @@ pub fn run() {
     println!("{}", hello);
 
     //fixed length string
-    let fixed_string = "Hello"; //primitive string
+    let _fixed_string = "Hello"; //primitive string
+
+    //misc methods
+
+    //contains
+    println!("Contains '!' {}", hello.contains("!"));
+
+    //replace
+    println!("Replace '!' {} ", hello.replace("!", "@"));
+
+    //loop by white space
+    for word in hello.split_whitespace() {
+        println!("{}", word);
+    }
+
 }
