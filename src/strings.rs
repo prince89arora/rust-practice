@@ -29,4 +29,7 @@ pub fn run() {
         println!("{}", word);
     }
 
+//    assertion testing
+    assert_eq!(16, hello.len());
+
 }
