@@ -2,6 +2,7 @@ mod print_helper;
 mod types;
 mod strings;
 mod touples;
+mod array;
 
 fn main() {
     println!("Hello, world!");
@@ -10,4 +11,5 @@ fn main() {
     strings::run();
 
     touples::run();
+    array::run();
 }
