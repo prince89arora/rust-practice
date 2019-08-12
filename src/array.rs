@@ -6,4 +6,8 @@ pub fn run() {
 
     //get memory size for an array...
     println!("Consumes {} bytes", std::mem::align_of_val(&arr));
+
+    //slice an array..
+    let sliced: &[i8] = &arr[0..2];
+    println!("Sliced array {:?}", sliced);
 }
