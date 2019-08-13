@@ -9,4 +9,10 @@ pub fn run() {
     println!("After Insertion....");
     println!("{:?}", vec_example);
     println!("size {}", vec_example.len());
+
+    //push element at the end
+    vec_example.push(10);
+    let option = vec_example.pop().unwrap();
+    println!("Get last element {}", option);
+
 }
