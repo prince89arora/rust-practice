@@ -3,6 +3,7 @@ mod types;
 mod strings;
 mod touples;
 mod array;
+mod vectors;
 
 fn main() {
     println!("Hello, world!");
@@ -12,4 +13,5 @@ fn main() {
 
     touples::run();
     array::run();
+    vectors::run();
 }
