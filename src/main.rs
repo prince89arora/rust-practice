@@ -4,6 +4,7 @@
 //mod touples;
 //mod array;
 //mod vectors;
+mod guessing_game;
 
 fn main() {
 //    println!("Hello, world!");
@@ -14,4 +15,6 @@ fn main() {
 //    touples::run();
 //    array::run();
 //    vectors::run();
+
+    guessing_game::run();
 }
