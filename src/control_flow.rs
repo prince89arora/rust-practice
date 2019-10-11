@@ -7,5 +7,12 @@ pub fn run() {
         println!("Else case");
     }
 
+    //2. condition as expression assignment.
+    let result: i32 = if is_true {
+        1
+    } else {
+        0
+    };
+    println!("Result from assignment {}", result);
 
 }
