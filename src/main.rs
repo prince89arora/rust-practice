@@ -4,7 +4,8 @@
 //mod touples;
 //mod array;
 //mod vectors;
-mod guessing_game;
+//mod guessing_game;
+mod control_flow;
 
 fn main() {
 //    println!("Hello, world!");
@@ -16,5 +17,7 @@ fn main() {
 //    array::run();
 //    vectors::run();
 
-    guessing_game::run();
+//    guessing_game::run();
+
+    control_flow::run();
 }
