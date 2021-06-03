@@ -2,6 +2,21 @@
 pub fn run() {
     println!("My name is {} {}", "Prince", "Arora");
 
+    // Positional Arguments
+    println!(
+        "{0} is from no were and {0} will be going to {1}",
+        "Foo",
+        "Goo"
+    );
+
+    //Names arguments
+    println!(
+        "{name} will be going to {place} and returning on {day}",
+        name = "i",
+        place = "Delhi",
+        day = "Friday"
+    );
+
     let message = "Test message to display...";
     println!("{}", message);
 
