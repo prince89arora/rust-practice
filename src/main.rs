@@ -9,6 +9,7 @@ mod control_flow;
 mod print_helper;
 mod types;
 mod strings;
+mod touples;
 
 use std::env;
 
@@ -23,6 +24,8 @@ fn main() {
         types::run();
     } else if run_type == "string" {
         strings::run();
+    } else if run_type == "touple" {
+        touples::run();
     }
 
 
