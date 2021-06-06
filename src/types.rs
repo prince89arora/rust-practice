@@ -44,7 +44,7 @@ pub fn run() {
     let a_char = 'a';
 
     //unicode char
-    let unicode_char = '\u{1F603}';
+    let unicode_char = '\u{1F600}';
     println!("{:?}", ( a_char, unicode_char ));
 
 

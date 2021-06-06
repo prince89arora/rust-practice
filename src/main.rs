@@ -7,6 +7,8 @@
 //mod guessing_game;
 mod control_flow;
 mod print_helper;
+mod types;
+mod strings;
 
 use std::env;
 
@@ -17,6 +19,11 @@ fn main() {
         print_helper::run();
     } else if run_type == "control" {
         control_flow::run();
+    } else if run_type == "types" {
+        types::run();
+    } else if run_type == "string" {
+        strings::run();
     }
+
 
 }
