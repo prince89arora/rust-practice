@@ -15,4 +15,12 @@ pub fn run() {
     let option = vec_example.pop().unwrap();
     println!("Get last element {}", option);
 
+
+    // Iterate from values
+    for item in vec_example.iter() {
+        println!(
+            "Item Number is {}",
+            item
+        )
+    }
 }

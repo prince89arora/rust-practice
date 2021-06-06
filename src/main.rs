@@ -4,6 +4,7 @@ mod types;
 mod strings;
 mod touples;
 mod array;
+mod vectors;
 
 use std::env;
 
@@ -22,6 +23,8 @@ fn main() {
         touples::run();
     } else if run_type == "array" {
         array::run();
+    } else if run_type == "vector" {
+        vectors::run();
     }
 
 
