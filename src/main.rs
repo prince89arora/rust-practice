@@ -1,15 +1,9 @@
-//mod print_helper;
-//mod types;
-//mod strings;
-//mod touples;
-//mod array;
-//mod vectors;
-//mod guessing_game;
 mod control_flow;
 mod print_helper;
 mod types;
 mod strings;
 mod touples;
+mod array;
 
 use std::env;
 
@@ -26,6 +20,8 @@ fn main() {
         strings::run();
     } else if run_type == "touple" {
         touples::run();
+    } else if run_type == "array" {
+        array::run();
     }
 
 
