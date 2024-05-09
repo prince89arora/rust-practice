@@ -19,6 +19,8 @@ let binnues: i32 = 2
 let (foo, bar) = (8,10);
 ```
 
+
+
 - Data on right hand side can be de-structured to initialize variables on left hand side.
 - Also called tuple pattern.
 
@@ -71,6 +73,12 @@ let v= v;
 let v = "2";
 let v = 2;
 ```
+
+
+## Memory Safety
+
+- Rust provides memory safety at compile time.
+- Variables must be initialized before use.
 
 
 
