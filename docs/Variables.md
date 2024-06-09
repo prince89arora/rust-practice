@@ -81,5 +81,28 @@ let v = 2;
 - Variables must be initialized before use.
 
 
+# Scalar Types
+
+### Integer
+- Unsigned and signed.
+- Unsigned starts with u and signed starts with i.
+- from 8 bit to size (u8,u16,u32,u64,u128,usize).
+- Same for signed (i8,i16,i32,i64,i128,isize).
+
+
+# Arrays
+
+- Limited to size 32, above that it loses some functionality.
+- Live on stack by default and are fixed size.
+- Most of the time vectors will be useful.
+- to declare with size and type
+```rust
+let myarray: [u8; 4];
+```
+this defined the type of item and size as 4.
+
+
+
+
 
 
