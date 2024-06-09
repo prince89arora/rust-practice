@@ -10,6 +10,15 @@ Rust has total 6 types of strings. But we care about only 2 of them.
 
 ## String
 
+- Data can be modified.
+
+```rust
+let msg = "abc".to_string();
+
+// or 
+
+let msg = String::from("abc");
+```
 
 
 
