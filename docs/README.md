@@ -1,6 +1,26 @@
 # Rust Documentation
 Rust is a system programing language.
 
+## Development Environment
+
+### Rustup
+It is a development toolchain that helps to install rust and other rust related development tools. 
+
+## Rust Program Anatomy
+
+- `main` function is the entry point for a rust application.
+```rust
+#![allow(unused_variables)]
+
+fn main() {
+    print!("This is the entry point");
+}
+```
+- A rust application can only have single `main` function.
+- ! sign after print in above example indicates that print is a `macro`.
+- `#![allow(unused_variables)]` is attribute declared to tell the compile not to show any warning when we have unused variables in our code.
+
+
 
 ## Important Benefits
 - Provides type and memory safety, but with the size and performance characteristics of natively compiled languages like C and C++. 
@@ -76,3 +96,22 @@ impl Noisy for Fox {
 - We can also define this function directly in implementation of struct, but defining that in trait will enable us to use generics. This means, a generic method can be created to accept anything that inherits a specific trait. 
 - As long as either trait or the struct is defined in project, it can be implemented. Meaning the default datatypes can be used to implement a new trait defined in your project.
 - Special trait called `Copy` if this is used, then it will be copied instead of move in move situation. Simple primitive types inherit this trait.
+- Default behaviour of a function can be provided in a trait. 
+Example:
+```rust
+trait Runnable {
+    fn run(&self) {
+        println!("Default running !!!!");
+    }
+}
+struct Animal {}
+impl Runnable for Animal {}
+```
+
+By not providing an implementation for Animal, will force to use the default behaviour for run. 
+
+- Fields cannot be defined in a trait. 1 workaround is to define getter and setter methods.
+
+
+## Collections
+
