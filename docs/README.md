@@ -20,6 +20,48 @@ fn main() {
 - ! sign after print in above example indicates that print is a `macro`.
 - `#![allow(unused_variables)]` is attribute declared to tell the compile not to show any warning when we have unused variables in our code.
 
+## Data Types
+
+## Scalar Data Types
+
+Holds single value
+
+``Note: `Primitive data types` are data types that are built into the language (are base for other custom data types) and are stored on stack.``
+
+### Numeric
+
+#### Int
+
+- Whole number without any fractional part. (1 is int but not 1.2)
+- Can be negative, and if it can be negative than it should be defined as signed.
+  - Deciding if int should be signed or unsigned depends on how big the number can be. Max size of an unsigned int is way bigger then max size of signed int.
+- We can also decide how many bits we want to allocate to the int.
+  - [8,16,32,64,128] are the sizes.
+
+### Characters and Booleans
+
+## Compound Data Types
+
+Holds multiple values
+
+### Arrays
+
+### Tuples
+
+## Strings
+
+
+
+## Variables
+
+### Declare Variables
+
+### Casting Data Types
+
+### Variable Immutability
+
+### Variable Scope and Shadowing
+
 
 
 ## Important Benefits
