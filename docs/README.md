@@ -20,6 +20,16 @@ fn main() {
 - ! sign after print in above example indicates that print is a `macro`.
 - `#![allow(unused_variables)]` is attribute declared to tell the compile not to show any warning when we have unused variables in our code.
 
+## Module System
+
+- `use`: This can be used to import something from another file from same project or from any other project/library.
+```rust
+use std::collections::HashMap;
+```
+
+- An external package can be added in cargo yaml file under dependency section with the required version.
+
+
 ## Data Types
 
 ## Scalar Data Types
@@ -46,7 +56,10 @@ Holds multiple values
 
 ### Arrays
 
+- Multiple values of same type
+
 ### Tuples
+
 
 ## Strings
 
