@@ -1,6 +1,22 @@
 # Rust Documentation
 Rust is a system programing language.
 
+- Rust is compiled once and can be used on any hardware, but still gives machine code so no interpreter required.
+- Rust is more towards safety side, for that reason it is a strongly typed  and static language.  
+
+## Stack vs Heap
+
+Both stack and heap are part of RAM. And when we create and variable or object all od them use memory in RAM.
+When we create a variable we need to make sure that it is easily accessible and use less memory.
+Programing languages like Java has GC to make sure if a variable is not used than remove it from memory.
+
+- Stack is faster. Can only store information that is fixed in size.
+- Heap is for dynamic sized data.
+- Stack holds the functions calls and variables used for these functions.
+- Storing a new variable in stack is faster because it is just added on top of the stack.
+- Storing a new variable in heap is time-consuming because memory allocator will need to find a space and address on heap to store the information.
+- Pointer to the address in heap is stored in stack with the variable name.
+
 ## Development Environment
 
 ### Rustup
