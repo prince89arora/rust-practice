@@ -60,11 +60,19 @@ Holds single value
 
 - Whole number without any fractional part. (1 is int but not 1.2)
 - Can be negative, and if it can be negative than it should be defined as signed.
-  - Deciding if int should be signed or unsigned depends on how big the number can be. Max size of an unsigned int is way bigger then max size of signed int.
+  - Deciding if int should be signed or unsigned depends on how big the number can be. Max size of an unsigned int is way bigger than max size of signed int.
 - We can also decide how many bits we want to allocate to the int.
   - [8,16,32,64,128] are the sizes.
 
-### Characters and Booleans
+#### Float
+
+- Numeric value with fractions.
+- Sizes are `f32` and `f64`.
+
+#### Characters and Booleans
+
+- Characters in rust are 4 byte in size. It uses unicode-32. Can contain alot of characters.
+- Booleans are true/false.
 
 ## Compound Data Types
 
@@ -73,12 +81,35 @@ Holds multiple values
 ### Arrays
 
 - Multiple values of same type
+- Indexed list starts from 0.
 
 ### Tuples
 
+- Can contain different data types.
+- Data can be accessed using index.
+
+```rust
+let location: (&str, f64, f64) = ("Delhi", 12.23456, -23.345678);
+print!("location: {}, Lat: {}, Long: {}", location.0, location.1, location.2);
+```
+
+- Other way to read values from tuple is to deconstruct.
+
+```rust
+let (name, lat, long) = location;
+```
 
 ## Strings
 
+- There are 2 types of string in rust. `String` and `&str`.
+- `String`
+  - Mutable
+  - Stored on heap
+- `&str`
+  - Immutable
+  - Stored on heap, stack or embedded in compiled code.
+
+- Concatenating string slices `&str` will result in `String`.
 
 
 ## Variables
