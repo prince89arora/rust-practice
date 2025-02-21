@@ -50,7 +50,7 @@ const CONST_VAR: i32 = 30;
 
 - Variables are only valid for their scope.
 - Variables are removed after a block or their scope.
-- Simple {} can also be use to execute some code and create a new/inner scope.
+- Simple {} can also be used to execute some code and create a new/inner scope.
 
 ```rust
 
@@ -61,8 +61,9 @@ let x = 1;
 }
 println!("{}", x); // Prints 1
 ```
-
+- Declaring a variable with same name as outer scope is called `shadowing`.
 - Variable shadow can also be done with in same scope.
+- Datatype, mutability or other aspects of the variable can change when shadowing.
 
 ```rust
 let mut v = 2;
