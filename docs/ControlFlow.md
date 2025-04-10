@@ -17,6 +17,21 @@ Another example:
 num = if a { b } else { c };
 ```
 
+- In case of multi condition if statement, and is evaluated first and then or.
+
+## Option
+
+- Rust does not have null type.
+- Used to see if a value is present or not.
+- Returns an enum of Some and None depending on if the value is present or not.
+
+## Match
+
+- Similar to switch statement in other languages.
+- `match` in rust is like a pattern matching statement.
+- Single condition with arrow `=>` is called arm in rust.
+- Can also use range for an arm in match like `200..=300`.
+
 ## Loops
 
 loops are unconditional in rust

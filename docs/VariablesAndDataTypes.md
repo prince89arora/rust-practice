@@ -2,6 +2,8 @@
 
 `let` can be used to declare variables.
 
+- Rust does not have null data type.
+
 ```
 let bunnies = 2
 ```

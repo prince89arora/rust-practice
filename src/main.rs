@@ -1,3 +1,7 @@
+mod enums;
+mod option;
+mod r#match;
+
 #[warn(unused_variables)]
 fn main() {
     // let number_val: u8 = 50;
