@@ -15,4 +15,17 @@ fn main() {
         _ => String::from("Number is not unique")
     };
     println!("Result is {}", result);
+
+    // match with enum
+    enum Color {
+        Red,
+        Green,
+        Blue
+    };
+    let testcolor = Color::Red;
+    match testcolor {
+        Color::Red => println!("Color is Red"),
+        Color::Green => println!("Color is Green"),
+        Color::Blue => println!("Color is Blue")
+    }
 }
