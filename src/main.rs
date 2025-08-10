@@ -1,6 +1,7 @@
 mod enums;
 mod option;
 mod r#match;
+mod strings;
 
 #[warn(unused_variables)]
 fn main() {

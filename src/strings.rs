@@ -2,7 +2,7 @@
 //String = growable, Head allocated data structure, used when need to modify string data.
 
 pub fn run() {
-    // Growable String..
+    // Growable String like an object..
     let mut hello = String::from("Hello!!");
     println!("{}", hello);
     println!("Length: {}", hello.len());
@@ -14,7 +14,10 @@ pub fn run() {
     println!("{}", hello);
 
     //fixed length string
-    let _fixed_string = "Hello"; //primitive string
+    let _fixed_string = "Hello"; //primitive string (string slice &str)
+
+    // To convert string to string slice.
+    let string_slice_from_string = hello.as_str();
 
     //misc methods
 

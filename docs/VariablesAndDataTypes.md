@@ -46,6 +46,9 @@ const CONST_VAR: i32 = 30;
 
 - Case should be screaming snake case.
 - var type is required.
+- Value cannot set to a function result.
+- These are inline when used. (When used, they are replaced with their value at compile time.)
+- They can be declared anywhere but valid for entire program.
 
 
 ## Scope
@@ -77,32 +80,90 @@ let v = "2";
 let v = 2;
 ```
 
-
 ## Memory Safety
 
 - Rust provides memory safety at compile time.
 - Variables must be initialized before use.
 
+## Data Types
 
-# Scalar Types
+### Data type casting
+Rust does not perform any type of implicit type casting.
 
-### Integer
+To explicitly type cast data `as` can be used.
+```rust
+let num1: f32 = 1.0;
+let num2: u8 = 1;
+let casted_num = num2 as f32;
+let result = num1/num2;
+
+print!("{}", result);
+```
+
+Explicit casting is supported until the is a clear way ot handle it. Example: u8 can casted to a char since rust
+can use a character representation of that number.
+
+### Scalar Types
+
+#### Integer
 - Unsigned and signed.
 - Unsigned starts with u and signed starts with i.
 - from 8 bit to size (u8,u16,u32,u64,u128,usize).
 - Same for signed (i8,i16,i32,i64,i128,isize).
 
+#### Float
 
-# Arrays
+- Numeric value with fractions.
+- Sizes are `f32` and `f64`.
+
+#### Characters and Booleans
+
+- Characters in rust are 4 byte in size. It uses unicode-32. Can contain alot of characters.
+- Booleans are true/false.
+
+### Compound Types
+
+#### Arrays
 
 - Limited to size 32, above that it loses some functionality.
 - Live on stack by default and are fixed size.
 - Most of the time vectors will be useful.
 - to declare with size and type
+
 ```rust
 let myarray: [u8; 4];
 ```
 this defined the type of item and size as 4.
+
+
+#### Tuples
+
+- Can contain different data types.
+- Data can be accessed using index.
+
+```rust
+let location: (&str, f64, f64) = ("Delhi", 12.23456, -23.345678);
+print!("location: {}, Lat: {}, Long: {}", location.0, location.1, location.2);
+```
+
+- Other way to read values from tuple is to deconstruct.
+
+```rust
+let (name, lat, long) = location;
+```
+
+#### Strings
+
+- There are 2 types of string in rust. `String` and `&str`.
+- `String`
+    - Mutable
+    - Stored on heap
+- `&str`
+    - Immutable
+    - Stored on heap, stack or embedded in compiled code.
+
+- Concatenating string slices `&str` will result in `String`.
+
 
 
 

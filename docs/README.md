@@ -6,7 +6,7 @@ Rust is a system programing language.
 
 ## Stack vs Heap
 
-Both stack and heap are part of RAM. And when we create and variable or object all od them use memory in RAM.
+Both stack and heap are part of RAM. And when we create and variable or object all of them use memory in RAM.
 When we create a variable we need to make sure that it is easily accessible and use less memory.
 Programing languages like Java has GC to make sure if a variable is not used than remove it from memory.
 
@@ -64,15 +64,7 @@ Holds single value
 - We can also decide how many bits we want to allocate to the int.
   - [8,16,32,64,128] are the sizes.
 
-#### Float
 
-- Numeric value with fractions.
-- Sizes are `f32` and `f64`.
-
-#### Characters and Booleans
-
-- Characters in rust are 4 byte in size. It uses unicode-32. Can contain alot of characters.
-- Booleans are true/false.
 
 ## Compound Data Types
 
@@ -83,36 +75,30 @@ Holds multiple values
 - Multiple values of same type
 - Indexed list starts from 0.
 
-### Tuples
-
-- Can contain different data types.
-- Data can be accessed using index.
-
-```rust
-let location: (&str, f64, f64) = ("Delhi", 12.23456, -23.345678);
-print!("location: {}, Lat: {}, Long: {}", location.0, location.1, location.2);
-```
-
-- Other way to read values from tuple is to deconstruct.
-
-```rust
-let (name, lat, long) = location;
-```
-
-## Strings
-
-- There are 2 types of string in rust. `String` and `&str`.
-- `String`
-  - Mutable
-  - Stored on heap
-- `&str`
-  - Immutable
-  - Stored on heap, stack or embedded in compiled code.
-
-- Concatenating string slices `&str` will result in `String`.
-
-
 ## Variables
+
+Simple initialization without explicit type declaration:
+```rust
+let myNumber = 0;
+```
+Rust will assign `i32` integer  type in this case.
+With type declaration:
+```rust
+let myNumber: u32 = 1;
+```
+
+
+
+### Mutability
+
+By default all vars are immutable.
+
+For mutable var:
+```rust
+let mut myVar = "test";
+```
+
+
 
 ### Declare Variables
 
