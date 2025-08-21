@@ -21,24 +21,35 @@ fn main() {
     // ================= Operations =====================//
 
     // ================= Lifetime =====================//
-    let a: &str = "test";
-    let b: &str = "test1";
-    let _outer_val = bigger_string(a, b);
-    // In this bigger_string can be used anywhere in code and arguments can have very
-    // different scope. To solve that with use of lifetime. Return variable will have minimum
-    // scope from arguments.
-    print!("{}", _outer_val);
+    // let a: &str = "test";
+    // let b: &str = "test1";
+    // let _outer_val = bigger_string(a, b);
+    // // In this bigger_string can be used anywhere in code and arguments can have very
+    // // different scope. To solve that with use of lifetime. Return variable will have minimum
+    // // scope from arguments.
+    // print!("{}", _outer_val);
     // ================= Lifetime =====================//
 
+
+    // ================= Closure =====================//
+    // let prefix = "Hi, ";
+    // let with_name = |name: &str| -> String {
+    //     format!("{} {}", prefix, name)
+    // };
+    //
+    // println!("{}", with_name("Prince"));
+    // ================= Closure =====================//
+
+
 }
 
-/// Function to find gigger string from 2 strings and to show how lifetime works
-/// * a
-/// * b
-fn bigger_string<'a>(a: &'a str, b: &'a str) -> &'a str {
-
-    //! &'a str     = to define lifetime for a reference type.
-    //! &'a mut str = to define lifetime for a mutable reference type.
-
-    if a.len() > b.len() { a } else { b }
-}
+// /// Function to find gigger string from 2 strings and to show how lifetime works
+// /// * a
+// /// * b
+// fn bigger_string<'a>(a: &'a str, b: &'a str) -> &'a str {
+//
+//     //! &'a str     = to define lifetime for a reference type.
+//     //! &'a mut str = to define lifetime for a mutable reference type.
+//
+//     if a.len() > b.len() { a } else { b }
+// }
