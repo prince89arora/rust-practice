@@ -76,38 +76,7 @@ Holds multiple values
 - Indexed list starts from 0.
 
 ## Variables
-
-Simple initialization without explicit type declaration:
-```rust
-let myNumber = 0;
-```
-Rust will assign `i32` integer  type in this case.
-With type declaration:
-```rust
-let myNumber: u32 = 1;
-```
-
-
-
-### Mutability
-
-By default all vars are immutable.
-
-For mutable var:
-```rust
-let mut myVar = "test";
-```
-
-
-
-### Declare Variables
-
-### Casting Data Types
-
-### Variable Immutability
-
-### Variable Scope and Shadowing
-
+[Read More](./VariablesAndDataTypes.md)
 
 
 ## Important Benefits

@@ -1,13 +1,18 @@
 # Ownership
 
-- There are 3 rules for ownership.
+- Ownership and Borrowing only applies on the heap.
+
+
+**There are 3 rules for ownership:**
 
 1. Each value has an owner. 
-   - There is no value in system that does nto have an owner.
+   - There is no value in system that does not have an owner.
    - Means every data is owned by a variable.
+
 2. Data can have only single owner. 
    - Ownership cannot be shared.
    - Other variables can borrow a value.
+
 3. When the owner gets out of scope, the value is dropped immediately.
 
 

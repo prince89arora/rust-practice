@@ -80,6 +80,13 @@ let v = "2";
 let v = 2;
 ```
 
+## Lifetime
+
+- **Generic Lifetime Annotations** are used to define relationship for scope of multiple references.
+- It does not change actual scope of a variable.
+- If same lifetime annotation is use for multiple arguments and the return type. In this case the smallest lifetime from arguments will be assigned to the return type. 
+
+
 ## Memory Safety
 
 - Rust provides memory safety at compile time.
