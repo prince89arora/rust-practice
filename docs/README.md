@@ -126,6 +126,13 @@ _Note: `::` is called scope operator in Rust._
 
 - Rust does not support Struts inheritance. It solves the issue using `Traits`.
 
+## Structs
+
+- A way to define a composite data type.
+- Properties can be accessed by name.
+- Can also be used with tuple to create a `Tuple Struct`.
+
+
 ## Traits
 
 - Similar to interfaces in other languages.

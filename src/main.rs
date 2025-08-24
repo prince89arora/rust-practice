@@ -2,6 +2,12 @@
 // use std::io::{Error, Read};
 // use std::io::ErrorKind;
 
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
 #[warn(unused_variables)]
 fn main() {
     // let number_val: u8 = 50;
@@ -82,6 +88,19 @@ fn main() {
     // }
     // ================= Error Handling =====================//
 
+    // ================= Structs =====================//
+    let rectangle = Rectangle {
+        width: 2,
+        height: 2
+    };
+
+    println!("Rectangle: {:#?}", rectangle);
+    println!("Has area of: {}", calculate_area(&rectangle));
+
+    // Tuple struct
+    struct Circle(u32, u32, u32);
+
+    // ================= Closure =====================//
 
 }
 
@@ -104,3 +123,8 @@ fn main() {
 //     file.read_to_string(&mut file_data_string)?;
 //     Ok(file_data_string)
 // }
+
+
+fn calculate_area(rect: &Rectangle) -> u32 {
+    rect.width * rect.height
+}
